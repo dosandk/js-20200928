@@ -99,7 +99,7 @@ describe('events-practice/sortable-table-v2', () => {
     expect(lastRow).toHaveTextContent('Детский велосипед Lexus Trike Racer Trike');
   });
 
-  it('should sort \'asc\' correctly for \'sortType\' equal number', () => {
+  it('should sort "desc" correctly for "sortType" equal number', () => {
     const { children } = sortableTable.subElements.header;
     const [ _, price ] = children;
 
