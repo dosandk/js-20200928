@@ -31,6 +31,8 @@ describe('oop-basic-intro-to-dom/column-chart', () => {
 
     const title = columnChart.element.querySelector('.column-chart__title');
 
+    debugger;
+
     expect(title).toHaveTextContent(label);
   });
 
