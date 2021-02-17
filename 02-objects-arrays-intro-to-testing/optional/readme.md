@@ -10,28 +10,35 @@
     function returnTrue1(a) {
       return typeof a !== 'object' && !Array.isArray(a) && a.length === 4;
     }
+    // 'aaaa'
 
     function returnTrue2(a) {
         return a !== a;
     }
+    // NaN
 
     function returnTrue3(a, b, c) {
         return a && a == b && b == c && a != c;
     }
+    // '0', false, ''
 
     function returnTrue4(a) {
         return (a++ !== a) && (a++ === a);
     }
+    // 2**53 - 1;
 
     function returnTrue5(a) {
         return a in a;
     }
+    // new String('length');
 
     function returnTrue6(a) {
         return a[a] == a;
     }
+    // new String('0');
 
     function returnTrue7(a, b) {
-        return a === b && 1/a < 1/b; 
+        return a === b && 1/a < 1/b;
     }
+    // -0, 0
 ```
